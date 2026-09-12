@@ -209,4 +209,3 @@ func (s *NotificationService) sendViaChannel(ctx context.Context, notif *notifDo
 		return fmt.Errorf("unsupported channel: %s", ch)
 	}
 }
-

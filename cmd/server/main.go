@@ -53,16 +53,15 @@ func main() {
 	}
 
 	// 4. Run database migrations.
-	if cfg.AppEnv == "development" {
-		if err := db.AutoMigrate(&repository.NotificationModel{}, &repository.PreferenceModel{}); err != nil {
-			log.Fatal("failed to auto-migrate database", zap.Error(err))
-		}
-		log.Info("database migration completed (dev auto-migrate)")
-	} else {
-		dbURL := dbConfig.DatabaseURL()
-		if err := database.RunMigrations(dbURL, "migrations", log); err != nil {
-			log.Fatal("failed to run migrations", zap.Error(err))
-		}
+	//
+	// One path for every environment. This service had no drift to fix -- both of
+	// its models already had SQL migrations -- but keeping a development-only
+	// AutoMigrate branch is the mechanism that produced KPD-56 through KPD-61 in
+	// the other six services, so it goes here too. Development still gets its
+	// schema automatically, because the server applies the migrations at startup.
+	dbURL := dbConfig.DatabaseURL()
+	if err := database.RunMigrations(dbURL, "migrations", log); err != nil {
+		log.Fatal("failed to run migrations", zap.Error(err))
 	}
 
 	// 5. Initialize JWT manager.

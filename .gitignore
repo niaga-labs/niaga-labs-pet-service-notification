@@ -18,3 +18,7 @@
 
 # OS
 .DS_Store
+
+# Claude Code, per-machine
+.claude/settings.local.json
+CLAUDE.local.md

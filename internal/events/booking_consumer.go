@@ -75,8 +75,8 @@ func (c *BookingEventConsumer) handleBookingRequested(ctx context.Context, ce ka
 		return err
 	}
 	metadata := map[string]interface{}{
-		"BookingNumber":  evt.BookingNumber,
-		"BookingID":      evt.BookingID.String(),
+		"BookingNumber":   evt.BookingNumber,
+		"BookingID":       evt.BookingID.String(),
 		"AmountFormatted": fmt.Sprintf("RM %.2f", float64(evt.EstimatedPrice)/100),
 	}
 	return c.service.HandleEvent(ctx, events.BookingRequested, evt.OwnerID, &evt.BookingID, metadata)
@@ -140,8 +140,8 @@ func (c *BookingEventConsumer) handleBookingCompleted(ctx context.Context, ce ka
 		return err
 	}
 	metadata := map[string]interface{}{
-		"BookingNumber":  evt.BookingNumber,
-		"BookingID":      evt.BookingID.String(),
+		"BookingNumber":   evt.BookingNumber,
+		"BookingID":       evt.BookingID.String(),
 		"AmountFormatted": fmt.Sprintf("RM %.2f", float64(evt.FinalPrice)/100),
 	}
 	return c.service.HandleEvent(ctx, events.BookingCompleted, evt.OwnerID, &evt.BookingID, metadata)

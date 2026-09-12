@@ -87,10 +87,10 @@ func (c *PaymentEventConsumer) handleEscrowReleased(ctx context.Context, ce kafk
 		return err
 	}
 	metadata := map[string]interface{}{
-		"PaymentID":            evt.PaymentID.String(),
-		"BookingID":            evt.BookingID.String(),
+		"PaymentID":             evt.PaymentID.String(),
+		"BookingID":             evt.BookingID.String(),
 		"RunnerPayoutFormatted": fmt.Sprintf("RM %.2f", float64(evt.RunnerPayout)/100),
-		"PlatformFeeFormatted": fmt.Sprintf("RM %.2f", float64(evt.PlatformFee)/100),
+		"PlatformFeeFormatted":  fmt.Sprintf("RM %.2f", float64(evt.PlatformFee)/100),
 	}
 	// Notify the runner about their payout.
 	return c.service.HandleEvent(ctx, events.PaymentEscrowReleased, evt.RunnerID, &evt.BookingID, metadata)

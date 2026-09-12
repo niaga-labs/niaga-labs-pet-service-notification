@@ -123,16 +123,16 @@ func (p *NotificationPreference) IsInQuietHours() bool {
 }
 
 // Getters.
-func (p *NotificationPreference) ID() uuid.UUID          { return p.id }
-func (p *NotificationPreference) UserID() uuid.UUID      { return p.userID }
-func (p *NotificationPreference) EnablePush() bool        { return p.enablePush }
-func (p *NotificationPreference) EnableSMS() bool         { return p.enableSMS }
-func (p *NotificationPreference) EnableEmail() bool       { return p.enableEmail }
-func (p *NotificationPreference) FCMToken() string        { return p.fcmToken }
-func (p *NotificationPreference) PhoneNumber() string     { return p.phoneNumber }
-func (p *NotificationPreference) Email() string           { return p.email }
+func (p *NotificationPreference) ID() uuid.UUID               { return p.id }
+func (p *NotificationPreference) UserID() uuid.UUID           { return p.userID }
+func (p *NotificationPreference) EnablePush() bool            { return p.enablePush }
+func (p *NotificationPreference) EnableSMS() bool             { return p.enableSMS }
+func (p *NotificationPreference) EnableEmail() bool           { return p.enableEmail }
+func (p *NotificationPreference) FCMToken() string            { return p.fcmToken }
+func (p *NotificationPreference) PhoneNumber() string         { return p.phoneNumber }
+func (p *NotificationPreference) Email() string               { return p.email }
 func (p *NotificationPreference) QuietHoursStart() *time.Time { return p.quietHoursStart }
 func (p *NotificationPreference) QuietHoursEnd() *time.Time   { return p.quietHoursEnd }
-func (p *NotificationPreference) Version() int64          { return p.version }
-func (p *NotificationPreference) CreatedAt() time.Time    { return p.createdAt }
-func (p *NotificationPreference) UpdatedAt() time.Time    { return p.updatedAt }
+func (p *NotificationPreference) Version() int64              { return p.version }
+func (p *NotificationPreference) CreatedAt() time.Time        { return p.createdAt }
+func (p *NotificationPreference) UpdatedAt() time.Time        { return p.updatedAt }
