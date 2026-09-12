@@ -256,4 +256,3 @@ func TestListNotifications_OnlyReturnsItemsVisibleToUser(t *testing.T) {
 		t.Fatalf("bob: expected 4 items, got %d", len(bobItems))
 	}
 }
-
