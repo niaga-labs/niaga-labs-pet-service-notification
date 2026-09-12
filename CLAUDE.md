@@ -1,7 +1,7 @@
 # Kilat Pet Delivery - service-notification
 
 Multi-channel delivery driven by Kafka events: email, push and SMS, with per-user channel preferences.
-Jira project **KPD** - GitHub `Kilat-Pet-Delivery/service-notification` - stack **Go 1.24 - Gin - GORM - PostgreSQL - Kafka**. Global rules live in `~/.claude/`;
+Jira project **KPD** - GitHub `niaga-labs/niaga-labs-pet-service-notification` - stack **Go 1.24 - Gin - GORM - PostgreSQL - Kafka**. Global rules live in `~/.claude/`;
 this file only adds what is specific here.
 
 ## Orient here first

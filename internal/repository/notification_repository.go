@@ -6,9 +6,9 @@ import (
 	"errors"
 	"time"
 
-	"github.com/Kilat-Pet-Delivery/lib-common/domain"
-	notifDomain "github.com/Kilat-Pet-Delivery/service-notification/internal/domain/notification"
 	"github.com/google/uuid"
+	"github.com/niaga-labs/niaga-labs-pet-lib-common/domain"
+	notifDomain "github.com/niaga-labs/niaga-labs-pet-service-notification/internal/domain/notification"
 	"gorm.io/gorm"
 )
 

@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"text/template"
 
-	notifDomain "github.com/Kilat-Pet-Delivery/service-notification/internal/domain/notification"
+	notifDomain "github.com/niaga-labs/niaga-labs-pet-service-notification/internal/domain/notification"
 )
 
 // NotificationTemplate defines the JSON structure for a single event template.

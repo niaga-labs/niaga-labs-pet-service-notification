@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/Kilat-Pet-Delivery/service-notification/internal/adapter"
-	notifDomain "github.com/Kilat-Pet-Delivery/service-notification/internal/domain/notification"
 	"github.com/google/uuid"
+	"github.com/niaga-labs/niaga-labs-pet-service-notification/internal/adapter"
+	notifDomain "github.com/niaga-labs/niaga-labs-pet-service-notification/internal/domain/notification"
 	"go.uber.org/zap"
 )
 
