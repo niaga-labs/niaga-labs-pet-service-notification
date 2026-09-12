@@ -16,6 +16,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Go module path is now `github.com/niaga-labs/niaga-labs-pet-service-notification` (was
+  `github.com/Kilat-Pet-Delivery/service-notification`), and every import of lib-common and lib-proto follows. The repos moved to the niaga-labs org on
+  2026-09-12 (HQ-40). The `replace => ../lib-*` targets are unchanged: local folders keep their
+  short names. (HQ-41)
 - README: the repository had none. Documents the run and migrate commands against
   the shared dev-infra stack, and the schema.
 

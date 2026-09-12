@@ -10,9 +10,9 @@ package main
 import (
 	"log"
 
-	"github.com/Kilat-Pet-Delivery/lib-common/database"
-	"github.com/Kilat-Pet-Delivery/lib-common/logger"
-	svcconfig "github.com/Kilat-Pet-Delivery/service-notification/internal/config"
+	"github.com/niaga-labs/niaga-labs-pet-lib-common/database"
+	"github.com/niaga-labs/niaga-labs-pet-lib-common/logger"
+	svcconfig "github.com/niaga-labs/niaga-labs-pet-service-notification/internal/config"
 	"go.uber.org/zap"
 )
 

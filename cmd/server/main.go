@@ -11,17 +11,17 @@ import (
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
 
-	"github.com/Kilat-Pet-Delivery/lib-common/auth"
-	"github.com/Kilat-Pet-Delivery/lib-common/database"
-	"github.com/Kilat-Pet-Delivery/lib-common/health"
-	"github.com/Kilat-Pet-Delivery/lib-common/logger"
-	"github.com/Kilat-Pet-Delivery/lib-common/middleware"
-	"github.com/Kilat-Pet-Delivery/service-notification/internal/adapter"
-	"github.com/Kilat-Pet-Delivery/service-notification/internal/application"
-	"github.com/Kilat-Pet-Delivery/service-notification/internal/config"
-	"github.com/Kilat-Pet-Delivery/service-notification/internal/events"
-	"github.com/Kilat-Pet-Delivery/service-notification/internal/handler"
-	"github.com/Kilat-Pet-Delivery/service-notification/internal/repository"
+	"github.com/niaga-labs/niaga-labs-pet-lib-common/auth"
+	"github.com/niaga-labs/niaga-labs-pet-lib-common/database"
+	"github.com/niaga-labs/niaga-labs-pet-lib-common/health"
+	"github.com/niaga-labs/niaga-labs-pet-lib-common/logger"
+	"github.com/niaga-labs/niaga-labs-pet-lib-common/middleware"
+	"github.com/niaga-labs/niaga-labs-pet-service-notification/internal/adapter"
+	"github.com/niaga-labs/niaga-labs-pet-service-notification/internal/application"
+	"github.com/niaga-labs/niaga-labs-pet-service-notification/internal/config"
+	"github.com/niaga-labs/niaga-labs-pet-service-notification/internal/events"
+	"github.com/niaga-labs/niaga-labs-pet-service-notification/internal/handler"
+	"github.com/niaga-labs/niaga-labs-pet-service-notification/internal/repository"
 )
 
 func main() {

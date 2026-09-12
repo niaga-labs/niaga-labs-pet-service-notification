@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	notifDomain "github.com/Kilat-Pet-Delivery/service-notification/internal/domain/notification"
 	"github.com/google/uuid"
+	notifDomain "github.com/niaga-labs/niaga-labs-pet-service-notification/internal/domain/notification"
 )
 
 // TestNotifMapperRoundTrip_Unread covers the toNotifModel/toNotifDomain round-trip
